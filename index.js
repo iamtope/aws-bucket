@@ -21,6 +21,7 @@ const storage = multer.memoryStorage({
         cb(null, '')
     }
 });
+console.log(storage);
 
 const  upload = multer({ storage: storage }).single('image');
 
